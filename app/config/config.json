@@ -1,5 +1,5 @@
 {
-	"dbURI": "mongodb://mohamed:123456@ds145828.mlab.com:45828/chat",
+	"mongodb": "mongodb://mohamed:123456@ds145828.mlab.com:45828/chat",
 	"sessionSecret": "<RandomString>",
 	"redis": {
 		"host": "127.0.0.1",

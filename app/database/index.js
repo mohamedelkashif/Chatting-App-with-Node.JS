@@ -4,7 +4,7 @@ var config 		= require('../config');
 var Mongoose 	= require('mongoose');
 var logger 		= require('../logger');
 
-Mongoose.connect(config.dbURI);
+Mongoose.connect(config.mongodb);
 
 // error if the connection fails
 Mongoose.connection.on('error', function(err) {
