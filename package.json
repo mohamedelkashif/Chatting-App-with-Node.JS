@@ -1,5 +1,5 @@
 {
-  "name": "chatAPP-node.js",
+  "name": "chattyApp",
   "version": "1.0.0",
   "description": "Chatting App using Node.JS and Express and Mongodb",
   "scripts": {
