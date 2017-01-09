@@ -4,18 +4,14 @@ var config 		= require('../config');
 var Mongoose 	= require('mongoose');
 var logger 		= require('../logger');
 
-// Connect to the database
-//var mongodbUri = 'mongodb://mohamed:123456@ds145828.mlab.com:45828/chat';
 Mongoose.connect(config.dbURI);
 
-// Throw an error if the connection fails
+// error if the connection fails
 Mongoose.connection.on('error', function(err) {
 	if(err) throw err;
 });
 
-// mpromise (mongoose's default promise library) is deprecated, 
-// Plug-in your own promise library instead.
-// Use native promises
+
 Mongoose.Promise = global.Promise;
 
 module.exports = { Mongoose, 
